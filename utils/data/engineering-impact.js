@@ -1,22 +1,22 @@
 export const engineeringImpact = [
   {
     id: 1,
-    title: "Production APIs",
-    summary: "Build and maintain reliable REST services with clear contracts, secure integrations, and production ownership.",
+    title: "Content Publishing",
+    summary: "Plan, create, and publish social content that keeps music and entertainment pages active and consistent across platforms.",
   },
   {
     id: 2,
-    title: "Cloud Delivery",
-    summary: "Ship through Azure DevOps, CI/CD automation, environment management, and repeatable release workflows.",
+    title: "Page Management",
+    summary: "Maintain brand pages day to day with clear posting workflows, updated assets, and reliable channel ownership.",
   },
   {
     id: 3,
-    title: "Observability",
-    summary: "Improve operational visibility with structured logging, monitoring, incident diagnosis, and practical runbooks.",
+    title: "Audience Engagement",
+    summary: "Support community growth through timely responses, interactive posts, and content that invites conversation.",
   },
   {
     id: 4,
-    title: "AI Infrastructure",
-    summary: "Create useful AI systems with MCP gateways, RAG pipelines, vector search, embeddings, and LLM API integrations.",
+    title: "Performance Insights",
+    summary: "Track content results and turn engagement data into practical next steps for scheduling and creative direction.",
   },
 ]

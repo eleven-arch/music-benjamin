@@ -1,22 +1,22 @@
 export const experiences = [
   {
     id: 1,
-    area: "Regulated Enterprise Systems",
-    summary: "Built and supported software for insurance and healthcare-style environments where security, reliability, auditability, and careful release practices matter."
+    area: "Social Media Content Management",
+    summary: "Managed and published digital content across social platforms for music, entertainment, and online media accounts, keeping pages active and on brand."
   },
   {
     id: 2,
-    area: "Backend Platform Work",
-    summary: "Designed REST APIs, service integrations, validation flows, automation scripts, and internal tools that support operational teams and production workflows."
+    area: "Content Planning & Post Creation",
+    summary: "Planned content calendars, wrote captions, prepared visuals, and coordinated multimedia assets for scheduled posts and campaign launches."
   },
   {
     id: 3,
-    area: "Cloud & Release Operations",
-    summary: "Worked across Azure DevOps, CI/CD pipelines, repository modernization, branching strategies, deployments, and repeatable release management."
+    area: "Page Management & Audience Engagement",
+    summary: "Handled day-to-day page management, community responses, and engagement activity to support audience growth and brand visibility."
   },
   {
     id: 4,
-    area: "Production Ownership",
-    summary: "Handled debugging, structured logging, monitoring, incident follow-up, reliability improvements, support playbooks, and maintenance for live systems."
+    area: "Performance Tracking & Reporting",
+    summary: "Monitored content performance, tracked engagement trends, and shared practical insights to improve future posting strategy."
   }
 ]

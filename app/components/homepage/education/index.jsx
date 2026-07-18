@@ -1,15 +1,14 @@
 // @flow strict
 import { engineeringImpact } from "@/utils/data/engineering-impact";
 import Image from "next/image";
-import { FaCode, FaRobot, FaServer } from "react-icons/fa";
-import { MdCloudQueue, MdMonitorHeart } from "react-icons/md";
+import { FaBullhorn, FaChartLine, FaComments, FaShareAlt } from "react-icons/fa";
 import GlowCard from "../../helper/glow-card";
 
 const impactIcons = {
-  1: FaServer,
-  2: MdCloudQueue,
-  3: MdMonitorHeart,
-  4: FaRobot,
+  1: FaShareAlt,
+  2: FaBullhorn,
+  3: FaComments,
+  4: FaChartLine,
 }
 
 function EngineeringImpact() {
@@ -33,7 +32,7 @@ function EngineeringImpact() {
         <div className="flex  items-center">
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
           <span className="bg-[#1a1443] w-fit text-white p-2 px-5 text-xl rounded-md">
-            Engineering Impact
+            Content Impact
           </span>
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
         </div>
@@ -43,7 +42,7 @@ function EngineeringImpact() {
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           {
             engineeringImpact.map((impact) => {
-              const Icon = impactIcons[impact.id] || FaCode;
+              const Icon = impactIcons[impact.id] || FaShareAlt;
 
               return (
                 <GlowCard key={impact.id} identifier={`impact-${impact.id}`}>

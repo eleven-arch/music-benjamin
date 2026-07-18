@@ -15,7 +15,7 @@ function page() {
 
       <div className="mx-auto max-w-2xl rounded-lg border border-[#1f2a44] bg-[#0f1629] p-6 text-center">
         <p className="text-[#c8d1e5]">
-          Technical writing and engineering notes will be added here when available.
+          Content notes and social media insights will be added here when available.
         </p>
       </div>
     </div>

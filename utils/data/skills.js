@@ -1,17 +1,16 @@
 export const skillsData = [
-  'Python',
-  'FastAPI',
-  'Java',
-  'Javascript',
-  'Typescript',
-  'React',
-  'Azure',
-  'Git',
-  'PostgreSQL',
-  'MySQL',
-  'Docker',
+  'Canva',
+  'Photoshop',
+  'Premiere Pro',
+  'After Effects',
+  'Adobe Audition',
+  'Figma',
+  'Illustrator',
+  'Lightroom',
+  'Microsoft Office',
   'Markdown',
-  'SQLAlchemy'
+  'Picsart',
+  'Wordpress'
 ]
 
 // Choose your skills from below. Make sure it's in the same format and spelled correctly.

@@ -1,18 +1,18 @@
 export const expertiseData = [
   {
-    title: "Backend APIs & Integrations",
-    description: "Python services, REST APIs, FastAPI, Flask, OpenAPI, secure auth flows, API versioning, pagination, rate limiting, and enterprise integration patterns."
+    title: "Content Planning & Publishing",
+    description: "Build content calendars, schedule posts, and manage publishing workflows across major social platforms for music, entertainment, and online media brands."
   },
   {
-    title: "Cloud Delivery & DevOps",
-    description: "Azure DevOps, CI/CD pipelines, pull request workflows, branching strategy, release management, documentation, and repeatable delivery practices."
+    title: "Post Creation & Multimedia",
+    description: "Create posts, captions, visuals, and short-form media, while coordinating multimedia assets that keep brand pages active and on-message."
   },
   {
-    title: "AI Infrastructure",
-    description: "MCP gateways, RAG pipelines, Azure AI Search, vector search, embeddings, OpenAI and Anthropic API integration, prompt design, and LLM observability."
+    title: "Page Management & Engagement",
+    description: "Manage brand pages day to day, respond to audience activity, and keep community conversations consistent with brand voice and campaign goals."
   },
   {
-    title: "Production Ownership",
-    description: "Structured logging, monitoring, alerting, instrumentation, production support playbooks, secure integrations, and performance tuning in regulated environments."
+    title: "Performance Tracking",
+    description: "Track reach, engagement, and content performance, then use those insights to refine posting strategy and support clearer reporting for stakeholders."
   }
 ]

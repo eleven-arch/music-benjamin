@@ -25,7 +25,7 @@ function HeroSection() {
             {personalData.designation}
           </p>
           <h1 className="text-3xl font-bold leading-10 text-white md:font-extrabold lg:text-[3.2rem] lg:leading-[4rem]">
-            Building reliable APIs, cloud delivery systems, and practical AI infrastructure.
+            Managing and publishing social content for music, entertainment, and online media.
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-7 text-[#c8d1e5] lg:text-lg">
             {personalData.title}
@@ -77,7 +77,7 @@ function HeroSection() {
             <code className="font-mono text-xs md:text-sm lg:text-base">
               <div className="blink">
                 <span className="mr-2 text-pink-500">const</span>
-                <span className="mr-2 text-white">coder</span>
+                <span className="mr-2 text-white">creator</span>
                 <span className="mr-2 text-pink-500">=</span>
                 <span className="text-gray-400">{'{'}</span>
               </div>
@@ -90,30 +90,26 @@ function HeroSection() {
               <div className="ml-4 lg:ml-8 mr-2">
                 <span className=" text-white">skills:</span>
                 <span className="text-gray-400">{`['`}</span>
-                <span className="text-amber-300">Python</span>
+                <span className="text-amber-300">Content Planning</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">FastAPI</span>
+                <span className="text-amber-300">Post Creation</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Azure DevOps</span>
+                <span className="text-amber-300">Page Management</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">CI/CD</span>
+                <span className="text-amber-300">Audience Engagement</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">REST APIs</span>
+                <span className="text-amber-300">Performance Tracking</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">RAG</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">MCP</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Observability</span>
+                <span className="text-amber-300">Multimedia</span>
                 <span className="text-gray-400">{"'],"}</span>
               </div>
               <div>
-                <span className="ml-4 lg:ml-8 mr-2 text-white">experience:</span>
-                <span className="text-orange-400">{`'7+ years'`}</span>
+                <span className="ml-4 lg:ml-8 mr-2 text-white">focus:</span>
+                <span className="text-orange-400">{`'Music & Entertainment'`}</span>
                 <span className="text-gray-400">,</span>
               </div>
               <div>
-                <span className="ml-4 lg:ml-8 mr-2 text-white">productionOwner:</span>
+                <span className="ml-4 lg:ml-8 mr-2 text-white">contentReady:</span>
                 <span className="text-orange-400">true</span>
                 <span className="text-gray-400">,</span>
               </div>
@@ -123,12 +119,12 @@ function HeroSection() {
                 <span className="text-gray-400">,</span>
               </div>
               <div>
-                <span className="ml-4 lg:ml-8 mr-2 text-white">regulatedEnvironments:</span>
+                <span className="ml-4 lg:ml-8 mr-2 text-white">usBasedClients:</span>
                 <span className="text-orange-400">true</span>
                 <span className="text-gray-400">,</span>
               </div>
               <div>
-                <span className="ml-4 lg:ml-8 mr-2 text-green-400">focus:</span>
+                <span className="ml-4 lg:ml-8 mr-2 text-green-400">publish:</span>
                 <span className="text-orange-400">function</span>
                 <span className="text-gray-400">{'() {'}</span>
               </div>
@@ -138,7 +134,7 @@ function HeroSection() {
               </div>
               <div>
                 <span className="ml-12 lg:ml-24 text-cyan-400">this.</span>
-                <span className="mr-2 text-white">productionOwner</span>
+                <span className="mr-2 text-white">contentReady</span>
                 <span className="text-amber-300">&amp;&amp;</span>
               </div>
               <div>

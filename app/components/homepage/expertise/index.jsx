@@ -1,9 +1,9 @@
 // @flow strict
 
 import { expertiseData } from "@/utils/data/expertise";
-import { FiActivity, FiCloud, FiCpu, FiShield } from "react-icons/fi";
+import { FiBarChart2, FiCalendar, FiEdit3, FiUsers } from "react-icons/fi";
 
-const icons = [FiCpu, FiCloud, FiActivity, FiShield];
+const icons = [FiCalendar, FiEdit3, FiUsers, FiBarChart2];
 
 function Expertise() {
   return (

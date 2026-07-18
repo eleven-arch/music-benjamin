@@ -1,9 +1,9 @@
 export const personalData = {
   name: "Benjamin Jasinski",
   profile: '/profile.png',
-  designation: "Senior Software Engineer",
-  title: "Senior Software Engineer for production APIs, cloud delivery, and AI-powered infrastructure.",
-  description: "I am a senior software engineer with 7+ years of experience building production back-end services, REST APIs, internal platforms, and secure integrations for enterprise insurance and healthcare teams. My work sits at the intersection of Python services, Azure DevOps delivery, CI/CD pipelines, observability, and practical AI infrastructure including MCP gateways, RAG pipelines, vector search, embeddings, and LLM API integrations.",
+  designation: "Social Media Content Manager",
+  title: "Social Media Content Manager for music, entertainment, and online media brands.",
+  description: "I manage and publish digital content across social media platforms, with a focus on music, entertainment, and online media. My responsibilities include content planning, post creation, page management, audience engagement, performance tracking, and coordinating multimedia content. Payments received are for social media content management and related digital media services provided to a U.S.-based company.",
   email: 'benjamin.j.se@outlook.com',
   phone: '',
   address: '',

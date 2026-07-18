@@ -8,9 +8,9 @@ import "./css/card.scss";
 import "./css/globals.scss";
 
 export const metadata = {
-  title: "Benjamin Jasinski - Senior Software Engineer",
+  title: "Benjamin Jasinski - Social Media Content Manager",
   description:
-    "Portfolio of Benjamin Jasinski, a senior software engineer focused on Python services, REST APIs, Azure DevOps delivery, CI/CD, production observability, and AI-powered infrastructure.",
+    "Portfolio of Benjamin Jasinski, a social media content manager focused on music, entertainment, and online media — including content planning, post creation, page management, audience engagement, and performance tracking.",
   icons: {
     icon: "/icon.svg",
     shortcut: "/icon.svg",
