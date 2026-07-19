@@ -6,6 +6,22 @@ import Link from "next/link";
 import { BsLinkedin } from "react-icons/bs";
 import { MdDownload } from "react-icons/md";
 import { RiContactsFill } from "react-icons/ri";
+import { FiCheckCircle, FiMusic, FiShare2 } from "react-icons/fi";
+
+const focusSkills = [
+  "Content Planning",
+  "Post Creation",
+  "Page Management",
+  "Audience Engagement",
+  "Performance Tracking",
+  "Multimedia",
+];
+
+const highlights = [
+  "Music, entertainment & online media",
+  "Remote content collaboration",
+  "Digital media services for U.S.-based companies",
+];
 
 function HeroSection() {
   return (
@@ -61,97 +77,60 @@ function HeroSection() {
           </div>
 
         </div>
-        <div className="order-1 lg:order-2 from-[#0d1224] border-[#1b2c68a0] relative rounded-lg border bg-gradient-to-r to-[#0a0d37]">
+
+        <div className="order-1 lg:order-2 from-[#0d1224] border-[#1b2c68a0] relative rounded-lg border bg-gradient-to-r to-[#0a0d37] overflow-hidden">
           <div className="flex flex-row">
             <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-pink-500 to-violet-600"></div>
             <div className="h-[1px] w-full bg-gradient-to-r from-violet-600 to-transparent"></div>
           </div>
-          <div className="px-4 lg:px-8 py-5">
-            <div className="flex flex-row space-x-2">
-              <div className="h-3 w-3 rounded-full bg-red-400"></div>
-              <div className="h-3 w-3 rounded-full bg-orange-400"></div>
-              <div className="h-3 w-3 rounded-full bg-green-200"></div>
+
+          <div className="px-5 lg:px-8 py-5 flex items-center justify-between gap-3 border-b border-indigo-900/80">
+            <div className="flex items-center gap-3">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full border border-[#263756] bg-[#111d34] text-[#22d3ee]">
+                <FiShare2 size={18} />
+              </div>
+              <div>
+                <p className="text-xs uppercase tracking-[0.2em] text-[#9ca8c3]">Content Snapshot</p>
+                <p className="text-sm font-semibold text-white">{personalData.name}</p>
+              </div>
+            </div>
+            <div className="hidden sm:flex items-center gap-2 rounded-full border border-[#263756] bg-[#111d34] px-3 py-1.5 text-[#fbbf24]">
+              <FiMusic size={14} />
+              <span className="text-[11px] uppercase tracking-[0.14em]">Music & Media</span>
             </div>
           </div>
-          <div className="overflow-hidden border-t-[2px] border-indigo-900 px-4 lg:px-8 py-4 lg:py-8">
-            <code className="font-mono text-xs md:text-sm lg:text-base">
-              <div className="blink">
-                <span className="mr-2 text-pink-500">const</span>
-                <span className="mr-2 text-white">creator</span>
-                <span className="mr-2 text-pink-500">=</span>
-                <span className="text-gray-400">{'{'}</span>
+
+          <div className="px-5 lg:px-8 py-6 space-y-6">
+            <div>
+              <p className="text-xs uppercase tracking-[0.18em] text-[#16f2b3] mb-2">Role</p>
+              <p className="text-lg font-semibold text-white">{personalData.designation}</p>
+              <p className="mt-2 text-sm leading-6 text-[#c8d1e5]">
+                Planning, creating, and publishing social content across platforms.
+              </p>
+            </div>
+
+            <div>
+              <p className="text-xs uppercase tracking-[0.18em] text-[#16f2b3] mb-3">What I do</p>
+              <div className="flex flex-wrap gap-2">
+                {focusSkills.map((skill) => (
+                  <span
+                    key={skill}
+                    className="rounded-full border border-[#263756] bg-[#111d34] px-3 py-1.5 text-xs text-[#dce6f8]"
+                  >
+                    {skill}
+                  </span>
+                ))}
               </div>
-              <div>
-                <span className="ml-4 lg:ml-8 mr-2 text-white">name:</span>
-                <span className="text-gray-400">{`'`}</span>
-                <span className="text-amber-300">Benjamin Jasinski</span>
-                <span className="text-gray-400">{`',`}</span>
-              </div>
-              <div className="ml-4 lg:ml-8 mr-2">
-                <span className=" text-white">skills:</span>
-                <span className="text-gray-400">{`['`}</span>
-                <span className="text-amber-300">Content Planning</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Post Creation</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Page Management</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Audience Engagement</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Performance Tracking</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Multimedia</span>
-                <span className="text-gray-400">{"'],"}</span>
-              </div>
-              <div>
-                <span className="ml-4 lg:ml-8 mr-2 text-white">focus:</span>
-                <span className="text-orange-400">{`'Music & Entertainment'`}</span>
-                <span className="text-gray-400">,</span>
-              </div>
-              <div>
-                <span className="ml-4 lg:ml-8 mr-2 text-white">contentReady:</span>
-                <span className="text-orange-400">true</span>
-                <span className="text-gray-400">,</span>
-              </div>
-              <div>
-                <span className="ml-4 lg:ml-8 mr-2 text-white">remoteReady:</span>
-                <span className="text-orange-400">true</span>
-                <span className="text-gray-400">,</span>
-              </div>
-              <div>
-                <span className="ml-4 lg:ml-8 mr-2 text-white">usBasedClients:</span>
-                <span className="text-orange-400">true</span>
-                <span className="text-gray-400">,</span>
-              </div>
-              <div>
-                <span className="ml-4 lg:ml-8 mr-2 text-green-400">publish:</span>
-                <span className="text-orange-400">function</span>
-                <span className="text-gray-400">{'() {'}</span>
-              </div>
-              <div>
-                <span className="ml-8 lg:ml-16 mr-2 text-orange-400">return</span>
-                <span className="text-gray-400">{`(`}</span>
-              </div>
-              <div>
-                <span className="ml-12 lg:ml-24 text-cyan-400">this.</span>
-                <span className="mr-2 text-white">contentReady</span>
-                <span className="text-amber-300">&amp;&amp;</span>
-              </div>
-              <div>
-                <span className="ml-12 lg:ml-24 text-cyan-400">this.</span>
-                <span className="mr-2 text-white">remoteReady</span>
-                <span className="text-amber-300">&amp;&amp;</span>
-              </div>
-              <div>
-                <span className="ml-12 lg:ml-24 text-cyan-400">this.</span>
-                <span className="mr-2 text-white">skills.length</span>
-                <span className="mr-2 text-amber-300">&gt;=</span>
-                <span className="text-orange-400">5</span>
-              </div>
-              <div><span className="ml-8 lg:ml-16 mr-2 text-gray-400">{`);`}</span></div>
-              <div><span className="ml-4 lg:ml-8 text-gray-400">{`};`}</span></div>
-              <div><span className="text-gray-400">{`};`}</span></div>
-            </code>
+            </div>
+
+            <div className="space-y-3 rounded-lg border border-[#263756] bg-[#0b1020]/80 p-4">
+              {highlights.map((item) => (
+                <div key={item} className="flex items-start gap-3 text-sm text-[#c8d1e5]">
+                  <FiCheckCircle className="mt-0.5 shrink-0 text-[#22d3ee]" size={16} />
+                  <span>{item}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

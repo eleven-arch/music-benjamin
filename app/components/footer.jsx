@@ -1,7 +1,6 @@
 // @flow strict
 import { personalData } from '@/utils/data/personal-data';
 import Link from 'next/link';
-import { IoLogoGithub } from "react-icons/io";
 import { MdAlternateEmail } from "react-icons/md";
 
 function Footer() {
@@ -21,16 +20,6 @@ function Footer() {
               aria-label="Email Benjamin Jasinski"
             >
               <MdAlternateEmail
-                className="bg-[#8b98a5] p-2 rounded-full hover:bg-[#16f2b3] hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer"
-                size={40}
-              />
-            </Link>
-            <Link
-              target="_blank"
-              href={personalData.github}
-              aria-label="Benjamin Jasinski on GitHub"
-            >
-              <IoLogoGithub
                 className="bg-[#8b98a5] p-2 rounded-full hover:bg-[#16f2b3] hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer"
                 size={40}
               />
