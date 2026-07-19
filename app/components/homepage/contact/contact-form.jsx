@@ -21,36 +21,40 @@ function ContactForm() {
     }
   };
 
+  const resetForm = () => {
+    setUserInput({
+      name: "",
+      email: "",
+      message: "",
+    });
+    setError({ email: false, required: false });
+  };
+
   const handleSendMail = async (e) => {
     e.preventDefault();
 
     if (!userInput.email || !userInput.message || !userInput.name) {
       setError({ ...error, required: true });
       return;
-    } else if (error.email) {
+    }
+
+    if (!isValidEmail(userInput.email)) {
+      setError({ ...error, email: true, required: false });
       return;
-    } else {
-      setError({ ...error, required: false });
-    };
+    }
+
+    setError({ email: false, required: false });
 
     try {
       setIsLoading(true);
-      const res = await axios.post(
-        `${process.env.NEXT_PUBLIC_APP_URL}/api/contact`,
-        userInput
-      );
-
+      await axios.post("/api/contact", userInput);
       toast.success("Message sent successfully!");
-      setUserInput({
-        name: "",
-        email: "",
-        message: "",
-      });
-    } catch (error) {
-      toast.error(error?.response?.data?.message);
+      resetForm();
+    } catch (err) {
+      toast.error(err?.response?.data?.message || "Failed to send message.");
     } finally {
       setIsLoading(false);
-    };
+    }
   };
 
   return (
